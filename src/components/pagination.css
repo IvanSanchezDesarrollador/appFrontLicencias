@@ -1,0 +1,13 @@
+.pagination .page-num{
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 25%;
+    font-weight: 800;
+    background-color: rgb(233, 233, 233);
+    color: rgb(97, 97, 97);
+}
+
+.pagination .pagination-link{
+    color: rgb(63, 63, 63)    ;
+}
+
