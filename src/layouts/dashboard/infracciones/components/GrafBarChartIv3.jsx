@@ -8,7 +8,7 @@ const GrafBarChartIv3 = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/infractions");
+    } = useFetch("https://api.open-data-analytics.info/api/infractions");
 
     const empresa01 = infractionsData.filter(({ empresa }) => (empresa?.includes('Empresa de Transportes y Servicios Generales Regional SRL') ?? false));
 

@@ -17,7 +17,7 @@ const CardsInicio = () => {
         error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/licenses");
+    } = useFetch("https://api.open-data-analytics.info/api/licenses");
 
 
     const longitudRegistrosLicensias = parseInt(licensesData.length);
@@ -56,7 +56,7 @@ const CardsInicio = () => {
         },
         {
             id: 3,
-            title: "Ordenes de Compra y Servicios",
+            title: "Órdenes de Compra y Servicios",
             descripcion: " Las órdenes de compra y servicio con compromisos establecidos entre la MPC  con proveedores, en el que, en caso de una orden de compra se establece la entrega de un bien a la Municipalidad, y en caso de una orden de servicio el proveedor brindará un servicio a la Municipalidad.",
             years: "2019 - 2022",
             img: img03,

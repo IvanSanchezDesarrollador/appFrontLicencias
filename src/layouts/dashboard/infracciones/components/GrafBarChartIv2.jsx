@@ -9,7 +9,7 @@ const GrafBarChartIv2 = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/infractions");
+    } = useFetch("https://api.open-data-analytics.info/api/infractions");
     const dato01 = infractionsData.filter(({ infraccion }) => (infraccion?.includes('PRESTAR EL SERVICIO DE TRANSPORTE PÚBLICO ESPECIAL SIN HABER OBTENIDO LA TUC O ESTE SE ENCUENTRE SUSPENDIDO VENCIDO O CANCELADO') ?? false));
     const dato02 = infractionsData.filter(({ infraccion }) => (infraccion?.includes('PAGO POR REMOLQUE DE GRUA') ?? false));
     const dato03 = infractionsData.filter(({ infraccion }) => (infraccion?.includes('POR ESTACIONAR VEHICULOS EN LA VIA PUBLICA AFECTANDO EL LIBRE TRANSITO PEATONAL Y/O VEHICULAR') ?? false));

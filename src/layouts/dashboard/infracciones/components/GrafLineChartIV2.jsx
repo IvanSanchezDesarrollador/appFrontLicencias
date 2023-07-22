@@ -11,7 +11,7 @@ export default function GrafLineChartIV2({anio}) {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/infractions");
+    } = useFetch("https://api.open-data-analytics.info/api/infractions");
 
     const calcularTotalRecaudadoPorRangoFechas = (infractionsData, fechaInicio, fechaFin) => {
         const infraccionesEnRango = infractionsData.filter(

@@ -11,7 +11,7 @@ const GrafAreaChartO = (anio) => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/orders");
+    } = useFetch("https://api.open-data-analytics.info/api/orders");
     const enero = ordersData.filter((n) => n.fecha_orden >= `${anio.anio}-01-01` && n.fecha_orden <= `${anio.anio}-02-01`);
     const febrero = ordersData.filter((n) => n.fecha_orden >= `${anio.anio}-02-01` && n.fecha_orden <= `${anio.anio}-03-01`);
     const marzo = ordersData.filter((n) => n.fecha_orden >= `${anio.anio}-03-01` && n.fecha_orden <= `${anio.anio}-04-01`);

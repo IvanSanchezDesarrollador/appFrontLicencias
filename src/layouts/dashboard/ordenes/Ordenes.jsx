@@ -28,7 +28,7 @@ const Ordenes = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/orders");
+    } = useFetch("https://api.open-data-analytics.info/api/orders");
 
     const getTotalRecaudado = () => {
         const total = ordersData.reduce((accumulador, orden) => {
@@ -77,7 +77,7 @@ const Ordenes = () => {
         <div className="w-full xl:h-auto bg-slate-50 pb-20">
             <div className="pt-[8rem] w-full xl:px-4 2xl:px-12 px-2">
                 <div className="w-full xl:flex justify-between items-center">
-                    <Metric className="md:text-start text-center">Dashboard de Ordenes de Compra y Servicios</Metric>
+                    <Metric className="md:text-start text-center">Dashboard de Órdenes de Compra y Servicios</Metric>
                     <div className="flex items-center justify-center">
                         <Title className="mr-2">Importante:</Title>
                         <br />
@@ -110,7 +110,7 @@ const Ordenes = () => {
                             <div className="w-6/12">
                                 <FaFile className="text-[2rem] text-red-500"></FaFile>
 
-                                <Title>Cantida total de Ordenes y Servicios </Title>
+                                <Title>Cantidad total de Órdenes y Servicios </Title>
                                 <Text>Años: 2019 - 2022</Text>
                             </div>
                             <div className="w-6/12 flex justify-center items-center">
@@ -126,7 +126,7 @@ const Ordenes = () => {
                             <div className="w-6/12">
                                 <FaBoxOpen className="text-[2rem] text-red-500"></FaBoxOpen>
 
-                                <Title>Cantida total de dinero recaudado</Title>
+                                <Title>Cantidad total de dinero gastado</Title>
                                 <Text>Años: 2019 - 2022</Text>
                             </div>
                             <div className="w-6/12 flex justify-center items-center">
@@ -139,7 +139,7 @@ const Ordenes = () => {
                         <Flex>
                             <div className="w-6/12">
                                 <FaFileInvoice className="text-[2rem] text-red-500"></FaFileInvoice>
-                                <Title>Cantidad de Ordenes de Servicio</Title>
+                                <Title>Cantidad de Órdenes de Servicio</Title>
                                 <Text>Años: 2019 - 2022</Text>
                             </div>
                             <div className="w-6/12 flex justify-center items-center">
@@ -152,8 +152,8 @@ const Ordenes = () => {
                         <Flex>
                             <div className="w-6/12">
                                 <FaExclamationTriangle className="text-[2rem] text-red-500"></FaExclamationTriangle>
-                                <Title>Recaudacion</Title>
-                                <Subtitle>Representacion en UIT&apos;s </Subtitle>
+                                <Title>Recaudación</Title>
+                                <Subtitle>Representación en UIT&apos;s </Subtitle>
                                 <Text>Años: 2019 - 2022</Text>
                             </div>
                             <div className="w-6/12 flex flex-col justify-center items-center ">
@@ -168,7 +168,7 @@ const Ordenes = () => {
                     <Col numColSpan={1} numColSpanLg={2}>
                         <Card className="shadow-xl">
 
-                            <Title className="flex justify-start items-center"><FaChartArea className="mr-2 text-red-400"></FaChartArea>Cantidad de Ordenes de Compra y Servicios por Año</Title>
+                            <Title className="flex justify-start items-center"><FaChartArea className="mr-2 text-red-400"></FaChartArea>Cantidad de Órdenes de Compra y Servicios por Año</Title>
                             <TabGroup>
                                 <TabList className="">
                                     <Tab icon={FaCircle}
@@ -240,7 +240,7 @@ const Ordenes = () => {
                     </Col>
                     <Col numColSpan={1} numColSpanLg={2}>
                         <Card className="shadow-xl">
-                            <Title className="flex justify-start items-center"> <FaChartLine className="mr-2 text-red-400"></FaChartLine> Flujo de recaudacion por Año (%)</Title>
+                            <Title className="flex justify-start items-center"> <FaChartLine className="mr-2 text-red-400"></FaChartLine> Flujo de recaudación por Año (%)</Title>
                             <TabGroup>
                                 <TabList className="xl:overflow-hidden">
                                     <Tab icon={FaCircle}

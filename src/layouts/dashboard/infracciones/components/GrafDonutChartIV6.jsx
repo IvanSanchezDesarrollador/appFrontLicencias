@@ -11,7 +11,7 @@ const GrafDonutChartIV6 = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/infractions");
+    } = useFetch("https://api.open-data-analytics.info/api/infractions");
 
     const siPago = infractionsData.filter(({ se_pago_multas }) => (se_pago_multas?.includes('SI') ?? false));
     const noPago = infractionsData.filter(({ se_pago_multas }) => (se_pago_multas?.includes('NO') ?? false));

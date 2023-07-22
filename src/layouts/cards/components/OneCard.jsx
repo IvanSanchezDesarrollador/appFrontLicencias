@@ -37,7 +37,7 @@ const OneCard = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/licenses");
+    } = useFetch("https://api.open-data-analytics.info/api/licenses");
 
     const {
         data: infractionsData,
@@ -45,7 +45,7 @@ const OneCard = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/infractions");
+    } = useFetch("https://api.open-data-analytics.info/api/infractions");
 
     const {
         data: ordersData,
@@ -53,7 +53,7 @@ const OneCard = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/orders");
+    } = useFetch("https://api.open-data-analytics.info/api/orders");
 
     const longitudRegistrosLicensias = parseInt(licensesData.length);
 
@@ -114,7 +114,7 @@ const OneCard = () => {
         },
         {
             id: 3,
-            title: "Ordenes de Compra y Servicios",
+            title: "Órdenes de Compra y Servicios",
             descripcion: " Las órdenes de compra y servicio con compromisos establecidos entre la MPC  con proveedores, en el que, en caso de una orden de compra se establece la entrega de un bien a la Municipalidad, y en caso de una orden de servicio el proveedor brindará un servicio a la Municipalidad.",
             years: "2019 - 2022",
             img: {
@@ -182,7 +182,7 @@ const OneCard = () => {
                     <div className="flex 2xl:mt-5 xl:mt-1 px-2 mt-5 2xl:mb-3">
                         <div className="w-7/12">
                             <Text className="2xl:text-[0.8rem] xl:text-[0.6rem]"><Bold>{e.cantidad}</Bold> Total de {e.title}</Text>
-                            <Text className="2xl:text-[0.8rem] xl:text-[0.6rem]"><Bold>{e.all_money}</Bold> (S/.) Total recaudado</Text>
+                            <Text className="2xl:text-[0.8rem] xl:text-[0.6rem]"><Bold>{e.all_money}</Bold> (S/.) Total Gastado</Text>
                         </div>
                         <div className="w-5/12 flex items-center justify-end">
                             <NavLink to={e.link_iterno} onClick={()=> inicio}>

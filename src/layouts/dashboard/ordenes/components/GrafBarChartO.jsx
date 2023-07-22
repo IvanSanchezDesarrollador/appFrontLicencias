@@ -8,7 +8,7 @@ const GrafBarChartO = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/orders");
+    } = useFetch("https://api.open-data-analytics.info/api/orders");
 
     const dato01 = ordersData.filter(({ fuente_financiamiento }) => (fuente_financiamiento?.includes('CANON Y SOBRECANON, REGALIAS, RENTA DE ADUANAS Y PARTICIPACIONES') ?? false));
     const dato02 = ordersData.filter(({ fuente_financiamiento }) => (fuente_financiamiento?.includes('DONACIONES Y TRANSFERENCIAS') ?? false));

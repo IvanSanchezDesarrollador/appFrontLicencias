@@ -8,7 +8,7 @@ const GrafLineChatOAll = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/orders");
+    } = useFetch("https://api.open-data-analytics.info/api/orders");
 
     const calcularTotalRecaudadoPorRangoFechas = (ordersData, fechaInicio, fechaFin) => {
         const licenciasEnRango = ordersData.filter(

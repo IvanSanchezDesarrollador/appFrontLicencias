@@ -31,7 +31,7 @@ function Licencias() {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/licenses");
+    } = useFetch("https://api.open-data-analytics.info/api/licenses");
 
     const getTotalRecaudado = () => {
         const total = licensesData.reduce((accumulador, licencia) => {
@@ -113,7 +113,7 @@ function Licencias() {
                             <div className="w-6/12">
                                 <FaFile className="text-[2rem] text-red-500"></FaFile>
 
-                                <Title>Cantida total de licencias </Title>
+                                <Title>Cantidad total de licencias </Title>
                                 <Text>Años: 2019 - 2022</Text>
                             </div>
                             <div className="w-6/12 flex justify-center items-center">
@@ -129,7 +129,7 @@ function Licencias() {
                             <div className="w-6/12">
                                 <FaBoxOpen className="text-[2rem] text-red-500"></FaBoxOpen>
 
-                                <Title>Cantida total de dinero recaudado</Title>
+                                <Title>Cantidad total de dinero recaudado</Title>
                                 <Text>Años: 2019 - 2022</Text>
                             </div>
                             <div className="w-6/12 flex justify-center items-center">

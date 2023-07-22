@@ -39,7 +39,7 @@ const Infracciones = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/infractions");
+    } = useFetch("https://api.open-data-analytics.info/api/infractions");
 
 
     const getTotalRecaudado = () => {
@@ -162,7 +162,7 @@ const Infracciones = () => {
                             <div className="w-6/12">
                                 <FaFile className="text-[2rem] text-red-500"></FaFile>
 
-                                <Title>Cantida total de Infracciones </Title>
+                                <Title>Cantidad total de Infracciones </Title>
                                 <Text>Año 2022</Text>
                             </div>
                             <div className="w-6/12 flex justify-center items-center">

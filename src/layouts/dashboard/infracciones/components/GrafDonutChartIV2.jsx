@@ -10,7 +10,7 @@ const GrafDonutChartIV2 = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/infractions");
+    } = useFetch("https://api.open-data-analytics.info/api/infractions");
 
     const RSi = infractionsData.filter(({ conductor_presente }) => (conductor_presente?.includes('SI') ?? false));
     const RNo = infractionsData.filter(({ conductor_presente }) => (conductor_presente?.includes('NO') ?? false));

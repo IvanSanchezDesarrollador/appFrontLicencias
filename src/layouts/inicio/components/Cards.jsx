@@ -7,7 +7,7 @@ import img03 from '../../../img/ordencompra.png'
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const endpoint = 'http://127.0.0.1:8000/api/licenses';
+const endpoint = 'https://api.open-data-analytics.info/api/licenses';
 
 function Cards() {
     const [licencias, setLicencias] = useState([]);
@@ -130,7 +130,7 @@ function Cards() {
                     <div className="w-full">
                         <div className="flex items-center">
                             <Link to={''} className="w-10/12">
-                                <Metric className=' hover:text-blue-500'>Ordenes de Compra y Servicios<span className="inline-block"><FaInfo className=' text-[1rem] text-gray-300'></FaInfo></span></Metric>
+                                <Metric className=' hover:text-blue-500'>Órdenes de Compra y Servicios<span className="inline-block"><FaInfo className=' text-[1rem] text-gray-300'></FaInfo></span></Metric>
                                 <Text>Año: <span className="text-red-500 ">2019 - 2022</span></Text>
                             </Link>
                             <div className="flex justify-end w-2/12">
@@ -151,7 +151,7 @@ function Cards() {
                                 <Title className="flex items-center px-4 mt-3 text-gray-600 text-[0.9rem]">
                                     <FaBuffer className="mr-2 text-[1.4rem]"></FaBuffer>
                                     <div>
-                                        Ordenes de compra y servicios: <span className="text-blue-500">{licencias.length}</span>
+                                        Órdenes de compra y servicios: <span className="text-blue-500">{licencias.length}</span>
                                     </div>
                                 </Title>
                                 <Title className="flex items-center px-4 mt-2 text-gray-600 text-[0.9rem]">

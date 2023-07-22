@@ -9,7 +9,7 @@ const GrafBarChartIv4 = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/infractions");
+    } = useFetch("https://api.open-data-analytics.info/api/infractions");
     const servicio01 = infractionsData.filter(({ tipo_servicio }) => (tipo_servicio?.includes('Transporte de materiales y residuos peligrosos') ?? false));
 
     const servicio02 = infractionsData.filter(({ tipo_servicio }) => (tipo_servicio?.includes('Transporte de Mercancías en General') ?? false));

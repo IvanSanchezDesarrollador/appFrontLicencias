@@ -12,7 +12,7 @@ const GrafAreaChartIV2 = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/infractions");
+    } = useFetch("https://api.open-data-analytics.info/api/infractions");
 
 
     const cate01 = infractionsData.filter(({ conductor_categoria_licencia }) => (conductor_categoria_licencia?.includes('A - Especial') ?? false));

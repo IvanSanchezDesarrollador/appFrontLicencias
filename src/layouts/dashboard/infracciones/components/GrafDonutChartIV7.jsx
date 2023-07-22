@@ -10,7 +10,7 @@ const GrafDonutChartIV7 = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/infractions");
+    } = useFetch("https://api.open-data-analytics.info/api/infractions");
 
     const siInternamiento = infractionsData.filter(({ internamiento_vehiculo }) => (internamiento_vehiculo?.includes('SI') ?? false));
     const noInternamiento = infractionsData.filter(({ internamiento_vehiculo }) => (internamiento_vehiculo?.includes('NO') ?? false));

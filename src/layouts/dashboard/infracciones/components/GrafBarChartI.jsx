@@ -9,7 +9,7 @@ const GrafBarChartI = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/infractions");
+    } = useFetch("https://api.open-data-analytics.info/api/infractions");
 
     const dato01 = infractionsData.filter(({ lugar_infraccion }) => (lugar_infraccion?.includes('PLAZUELA BOLO') ?? false));
     const dato02 = infractionsData.filter(({ lugar_infraccion }) => (lugar_infraccion?.includes('JR SAN SAL') ?? false));

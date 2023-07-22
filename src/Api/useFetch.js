@@ -23,7 +23,7 @@ export function useFetch(url) {
       .finally(() => setLoading(false));
 
     return () => abortController.abort();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleCancelRequest = () => {

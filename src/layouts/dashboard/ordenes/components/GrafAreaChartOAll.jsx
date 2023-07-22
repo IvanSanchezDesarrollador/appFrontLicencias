@@ -13,7 +13,7 @@ const GrafAreaChartOAll = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/orders");
+    } = useFetch("https://api.open-data-analytics.info/api/orders");
 
     const A2019 = ordersData.filter((n) => n.fecha_orden >= `2019-01-01` && n.fecha_orden <= `2019-12-31`);
     const A2020 = ordersData.filter((n) => n.fecha_orden >= `2020-01-01` && n.fecha_orden <= `2020-12-31`);

@@ -13,7 +13,7 @@ const GrafAreaChartI = (anio) => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/infractions");
+    } = useFetch("https://api.open-data-analytics.info/api/infractions");
 
     const enero = infractionsData.filter((n) => n.fecha_infraccion >= `${anio.anio}-01-01` && n.fecha_infraccion <= `${anio.anio}-02-01`);
 

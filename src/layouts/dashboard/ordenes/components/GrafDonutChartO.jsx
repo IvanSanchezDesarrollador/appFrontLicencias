@@ -10,7 +10,7 @@ const GrafDonutChartO = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/orders");
+    } = useFetch("https://api.open-data-analytics.info/api/orders");
 
     const compra = ordersData.filter((n) => n.tipo_orden === 'COMPRA');
     const servicio = ordersData.filter((n) => n.tipo_orden === 'SERVICIO');
@@ -66,7 +66,7 @@ const GrafDonutChartO = () => {
                     <div className='mb-4'>
                         <div className='flex items-center'>
                             <FaInfoCircle className='text-base  text-blue-500 mr-1'></FaInfoCircle>
-                            <Text className=''>Ordenes de Compra</Text>
+                            <Text className=''>Órdenes de Compra</Text>
                         </div>
 
                         <Text className='text-xs'>Establece la entrega de un<Bold> bien </Bold>a la Municipalidad</Text>

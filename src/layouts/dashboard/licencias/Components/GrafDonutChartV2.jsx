@@ -12,7 +12,7 @@ const GrafDonutChartV2 = () => {
         /*error: licensesError,
         handleCancelRequest: cancelLicensesRequest
         */
-    } = useFetch("http://127.0.0.1:8000/api/licenses");
+    } = useFetch("https://api.open-data-analytics.info/api/licenses");
 
 
 
