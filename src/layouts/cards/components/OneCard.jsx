@@ -90,7 +90,7 @@ const OneCard = () => {
                 img03: img03Licencias,
                 img04: img04Licencias,
             },
-            link: 'https://www.datosabiertos.gob.pe/dataset/licencias-de-funcionamiento-del-distrito-de-cajamarca-municipalidad-provincial-de-cajamarca',
+            link: 'https://www.datosabiertos.gob.pe/dataset/licencias-de-funcionamiento-del-distrito-de-cajamarca-municipalidad--de-cajamarca',
             cantidad: longitudRegistrosLicensias,
             link_iterno: '/licencias',
             all_money: getTotalRecaudado(),
@@ -182,7 +182,7 @@ const OneCard = () => {
                     <div className="flex 2xl:mt-5 xl:mt-1 px-2 mt-5 2xl:mb-3">
                         <div className="w-7/12">
                             <Text className="2xl:text-[0.8rem] xl:text-[0.6rem]"><Bold>{e.cantidad}</Bold> Total de {e.title}</Text>
-                            <Text className="2xl:text-[0.8rem] xl:text-[0.6rem]"><Bold>{e.all_money}</Bold> (S/.) Total Gastado</Text>
+                            <Text className="2xl:text-[0.8rem] xl:text-[0.6rem]">(S/.) <Bold>{e.all_money}</Bold></Text>
                         </div>
                         <div className="w-5/12 flex items-center justify-end">
                             <NavLink to={e.link_iterno} onClick={()=> inicio}>

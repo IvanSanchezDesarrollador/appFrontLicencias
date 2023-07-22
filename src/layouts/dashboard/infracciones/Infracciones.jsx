@@ -207,7 +207,7 @@ const Infracciones = () => {
                         <Flex>
                             <div className="w-6/12">
                                 <FaExclamationTriangle className="text-[2rem] text-red-500"></FaExclamationTriangle>
-                                <Title>Recaudacion</Title>
+                                <Title>Recaudación</Title>
                                 <Subtitle>Representacion en UIT&apos;s </Subtitle>
                                 <Text>Años: 2019 - 2022</Text>
                             </div>
